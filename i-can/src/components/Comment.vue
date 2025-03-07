@@ -1,13 +1,11 @@
 <!-- filepath: c:\Users\LENOVO\Documents\CODERISM\WHYYY\i-can\src\components\Comment.vue -->
 <template>
-  <section class="comment-section">
     <div class="comment-container">
       <h1>Comments</h1>
       <ul>
         <li v-for="comment in comments" :key="comment.id">{{ comment.name }}: {{ comment.comment }}</li>
       </ul>
     </div>
-  </section>
 </template>
 
 <script setup>
@@ -44,8 +42,7 @@ onMounted(() => {
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  max-width: 800px; /* Increased width */
+  width: 90%;
 }
 
 ul {

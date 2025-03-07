@@ -1,6 +1,5 @@
 <!-- filepath: c:\Users\LENOVO\Documents\CODERISM\WHYYY\i-can\src\components\CommentForm.vue -->
 <template>
-  <section class="comment-section">
     <div class="comment-container">
       <h2>Leave a Comment</h2>
       <form @submit.prevent="submitComment">
@@ -18,7 +17,6 @@
         </div>
       </form>
     </div>
-  </section>
 </template>
 
 <script setup>
@@ -54,20 +52,14 @@ async function submitComment() {
 </script>
 
 <style scoped>
-.comment-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
-}
 
 .comment-container {
   background-color: rgba(245, 245, 220, 0.8);
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  max-width: 800px; /* Increased width */
+  width: 90%;
+  max-width: 700px; /* Increased width */
 }
 
 .form-group {
@@ -80,7 +72,7 @@ label {
 }
 
 .form-control {
-  width: 100%;
+  width: 80%;
   padding: 0.5rem;
   border: 1px solid #ccc;
   border-radius: 4px;
